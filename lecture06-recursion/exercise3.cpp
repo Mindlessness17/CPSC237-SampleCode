@@ -3,8 +3,15 @@ using namespace std;
 
 void printUp(int n)
 {
-    //to do
-    cout << n;
+    if (n == 1)
+    {
+        cout << "1, ";
+    }
+    else
+    {
+        printUp(n - 1);
+        cout << n;
+    }
 }
 
 int main()
